@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Seed Survey Form</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <div class="box">
+    <h1 id="title">Green Seed Survey Form</h1>
+    <p id="description"><i>Through this survey, we hope to gain a better understanding of your experience and relationship with your plants. </i></p>
+
+    <form id="survey-form">
+      <fieldset>
+       <label id="name-label">Name <input id="name" type="text" required placeholder="Enter your name"/></label>
+        <label id="email-label">Email <input id="email" type="email" required placeholder="Enter your email"/></label>
+        <label id="number-label">Age (optional) <input id="number" type="number" min="13" max="120" placeholder="Age"/></label>
+      </fieldset>
+
+      <fieldset>
+       <label for="experience-level">Please indicate your level of epxerience with taking care of houseplants.
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">None</option>
+          <option value="2">Beginner</option>
+          <option value="3">Intermediate</option>
+         <option value="4">Experienced</option>
+        </select>
+       </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="recommend">Would you recommend Green Seed to a friend?</label>
+        <label for="definitely-recommed"><input id="definitely" type="radio" name="recommend" class="inline" value="definitely"/> Definitely</label>
+        <label for="maybe-recommend"><input id="maybe" type="radio" name="recommend" class="inline" value="maybe"/> Maybe</label>
+        <label for="not-sure-recommend"><input id="not-sure" type="radio" name="recommend" class="inline" value="not-sure"/> Not sure</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="considerations">How did you hear about us?
+         <select id="dropdown">
+           <option value="">(select one)</option>
+           <option value="1">Search engine</option>
+           <option value="2">Another website</option>
+           <option value="3">Social media</option>
+           <option value="4">Ad</option>
+           <option value="5">Referral</option>
+           <option value="6">Other</option>
+         </select>
+        </label>
+      </fieldset>
+
+      <fieldset class="checkbox">
+        <label for="considerations" name="considerations">What do you consider when purchasing a houseplant?
+          <label><input id="aesthetics" type="checkbox"  name="considerations" value="1" class="inline"/> Aesthetics</label>
+          <label><input id="cost" type="checkbox"  name="considerations" value="2" class="inline"/> Cost</label>
+          <label><input id="function" type="checkbox"  name="considerations" value="3" class="inline"/> Function (herbs)</label>
+          <label><input id="health-benefits" type="checkbox"  name="considerations" value="4" class="inline"/> Health benefits</label>
+          <label><input id="maintenance-needs" type="checkbox"  name="considerations" value="5" class="inline"/> Maintenance needs (easy to care for)</label>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="challenges">What are your biggest challenges when it comes to owning and caring for houseplants?
+          <textarea id="challenges" name="challenges" rows="3" cols="40" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+
+     <label type="submit"><input id="submit" type="submit" value="Submit" /></label>
+
+  </form>
+  </div>
+</body>
